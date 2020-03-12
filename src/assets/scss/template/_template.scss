@@ -1,0 +1,251 @@
+// Body Styles
+body,
+html,
+.body,
+.footer {
+  background: $black;
+}
+
+// Typography
+h1 {
+  line-height: 1.04;
+  hyphens: none;
+  -webkit-hyphens: none;
+  padding: 20px 0 0;
+  margin-bottom: 0;
+}
+h3,
+h4 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+// CTA links
+a.underline,
+.user-content p a,
+p.cta a {
+  color: $orange;
+  text-decoration: underline;
+}
+
+// Dark links (used for #designingabetterchicago)
+a.dark {
+  color: $black;
+  text-decoration: none;
+}
+
+// Wrapper of content blocks
+.wrapper {
+  max-width: 890px;
+}
+
+// Padding on top
+.columns.padded {
+  padding-top: 40px;
+}
+
+// Main header
+.header {
+  // Color variant
+  background: $red;
+
+  // No colored bg on header content area
+  .container {
+    background: transparent;
+  }
+
+  // Main logo in header
+  .logo {
+    img {
+      display: block;
+      max-width: 230px;
+      height: auto;
+    }
+  }
+
+  // View in browser link
+  p.view-archive {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    line-height: 15px;
+    text-decoration-line: underline;
+    a {
+      text-transform: uppercase;
+      color: #1F1C1B;
+    }
+  }
+}
+
+// Primary content
+.wrapper.primary {
+  background: $cream;
+}
+
+// Primary image with staggered color bg
+.wrapper.primary-image {
+  background-color: $cream;
+  background-image: url('assets/img/red-cream-bg.gif');
+  background-size: 100% 100%;
+  // background-image: linear-gradient(to bottom, $red 0%, $red 50%, $cream 50%, $cream 100%);
+  img {
+    max-width: 590px;
+    height: auto;
+  }
+}
+
+// Items content (events, grantees)
+.wrapper.items {
+  background: $white;
+  h1 {
+    padding: 40px 0;
+  }
+  .item {
+    table {
+      margin-top: 20px;
+      border-top: 2px solid $black;
+    }
+    img {
+      padding-top: 10px;
+      max-width: 590px;
+      height: auto;
+    }
+    h2 {
+      padding-top: 20px;
+    }
+    p:first-of-type {
+      border-top: 2px solid $gray;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+// Pre-footer
+.wrapper.pre-footer {
+  background: $gray;
+  p.outro {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+
+////////////////////////////////////
+// Theme green
+.header.theme-green {
+  background: $forest;
+  h1 {
+    color: $electric;
+  }
+}
+.wrapper.primary.theme-green {
+  background: $electric;
+}
+.wrapper.primary-image.theme-green {
+  background-color: $electric;
+  background-image: url('assets/img/green-yellow-bg.gif');
+  // background-image: linear-gradient(to bottom, $forest 0%, $forest 50%, $electric 50%, $electric 100%);
+}
+
+
+////////////////////////////////////
+// Theme cream
+.header.theme-cream {
+  background: $cream;
+  h1 {
+    color: $teal;
+  }
+}
+.wrapper.primary.theme-cream {
+  background: $white;
+}
+.wrapper.primary-image.theme-cream {
+  background-color: $white;
+  background-image: url('assets/img/cream-white-bg.gif');
+  // background-image: linear-gradient(to bottom, $cream 0%, $cream 50%, $white 50%, $white 100%);
+}
+
+// Logos list
+.container.logos {
+  Margin: 40px 0;
+  margin: 40px 0;
+  padding: 40px 0;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  .columns {
+    padding-bottom: 0;
+  }
+}
+
+// Footer footer
+.wrapper.footer {
+  color: $white;
+  p {
+    color: $white;
+    font-size: 10px;
+  }
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+// Mobile styles
+@media only screen and (max-width: #{$global-breakpoint}) {
+  table.body .container {
+    width: 100%;
+  }
+  .header {
+    .logo {
+      img {
+        max-width: 170px!important;
+      }
+    }
+  }
+  .columns.padded {
+    padding-top: 20px!important;
+  }
+
+  .wrapper.primary-image {
+    img {
+      max-width: 100%!important;
+    }
+  }
+  .wrapper.items {
+    .item {
+      p:first-of-type {
+        padding-top: 10px!important;
+      }
+      img {
+        max-width: 100%!important;
+      }
+    }
+  }
+
+  // Mobile typography
+  p {
+    font-size: 15px!important
+  }
+  h1 {
+    font-size: 36px!important;
+    padding: 20px 0 0 0!important;
+    margin-bottom: 0!important;
+  }
+  h2 {
+    font-size: 20px!important;
+  }
+  h3 {
+    font-size: 14px!important;
+    text-transform: uppercase!important;
+  }
+  h4 {
+    font-size: 14px!important;
+    text-transform: uppercase!important;
+  }
+  h5 {
+    font-size: 14px!important;
+  }
+
+}
