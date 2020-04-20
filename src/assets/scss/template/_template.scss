@@ -1,6 +1,8 @@
 // Body Styles
 body,
-html,
+html {
+  background: $black !important;
+}
 .body,
 .footer {
   background: $black;
